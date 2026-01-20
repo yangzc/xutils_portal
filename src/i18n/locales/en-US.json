@@ -59,9 +59,18 @@
     }
   },
   "footer": {
-    "copyright": "© {{year}} XUtils Platform. All rights reserved.",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
-    "contact": "Contact"
+    "tagline": "Efficiency tools for developers and professionals.",
+    "product": "Product",
+    "company": "Company",
+    "connect": "Connect",
+    "rights": "All rights reserved.",
+    "links": {
+      "docs": "Documentation",
+      "about": "About Us",
+      "contact": "Contact Support",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "newsletter": "Subscribe to updates"
+    }
   }
 }

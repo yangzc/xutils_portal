@@ -59,9 +59,18 @@
     }
   },
   "footer": {
-    "copyright": "© {{year}} XUtils 平台。保留所有权利。",
-    "privacy": "隐私政策",
-    "terms": "服务条款",
-    "contact": "联系我们"
+    "tagline": "为开发者和专业人士打造的效率工具",
+    "product": "产品",
+    "company": "公司",
+    "connect": "联系",
+    "rights": "保留所有权利。",
+    "links": {
+      "docs": "帮助文档",
+      "about": "关于我们",
+      "contact": "联系支持",
+      "privacy": "隐私政策",
+      "terms": "服务条款",
+      "newsletter": "订阅最新动态"
+    }
   }
 }
