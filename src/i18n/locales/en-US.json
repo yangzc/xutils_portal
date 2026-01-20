@@ -70,7 +70,29 @@
       "contact": "Contact Support",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
+      "feedback": "Feedback",
       "newsletter": "Subscribe to updates"
+    }
+  },
+  "feedback": {
+    "title": "Feedback & Suggestions",
+    "subtitle": "Your ideas help us improve every day",
+    "type": "Feedback Type",
+    "emailLabel": "Your Email (for follow-up)",
+    "contentLabel": "Detailed Description",
+    "placeholderEmail": "example@mail.com",
+    "placeholderContent": "Please describe your issue or suggestion...",
+    "submit": "Send Feedback",
+    "submitting": "Sending...",
+    "successTitle": "Success!",
+    "successDesc": "Thank you for your valuable feedback. Our team reviews every submission and will contact you if needed.",
+    "btnContinue": "New Feedback",
+    "errorContent": "Please provide a description",
+    "types": {
+      "bug": "Bug Report",
+      "feature": "Feature Request",
+      "ui": "UI/UX Improvement",
+      "other": "Other"
     }
   }
 }

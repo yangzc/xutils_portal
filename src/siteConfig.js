@@ -11,6 +11,7 @@ export const COMPANY_INFO = {
 export const ROUTES = {
   privacy: '/privacy',
   terms: '/terms',
+  feedback: '/feedback',
 };
 
 export const getPortalLink = (path) => `${URLS.portal}${path}`;
@@ -26,6 +27,7 @@ export const getCommonLinks = (t) => ({
     // Let's make them Absolute by default for simplicity in cross-site usage.
     // But inside Portal, standard <Link> handles absolute URLs fine (as external) or we use <a>.
     { name: t('footer.links.privacy') || '隐私政策', href: getPortalLink(ROUTES.privacy) },
-    { name: t('footer.links.terms') || '服务条款', href: getPortalLink(ROUTES.terms) }
+    { name: t('footer.links.terms') || '服务条款', href: getPortalLink(ROUTES.terms) },
+    { name: t('footer.links.feedback') || '建议反馈', href: getPortalLink(ROUTES.feedback) }
   ]
 });

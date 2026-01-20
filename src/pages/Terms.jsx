@@ -1,13 +1,17 @@
 import React from 'react';
-
 import { useTranslation } from 'react-i18next';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import { getCommonLinks } from '../siteConfig';
 
 const Terms = () => {
   const { t } = useTranslation();
+  const commonLinks = getCommonLinks(t);
   
   return (
-    <div className="min-h-screen bg-background flex flex-col">
-      <main className="flex-grow container pt-20 pb-20 max-w-4xl mx-auto">
+    <div className="min-h-screen bg-background flex flex-col pt-16">
+      <Navbar showNav={true} navLinks={commonLinks.products} />
+      <main className="flex-grow container pt-20 pb-20 max-w-4xl mx-auto px-4">
         <h1 className="text-4xl font-bold mb-8">服务条款</h1>
         <div className="prose prose-lg dark:prose-invert">
           <p className="text-muted-foreground mb-8">生效日期：2026年1月1日</p>
@@ -31,6 +35,7 @@ const Terms = () => {
           <p>如果您违反本条款，我们保留暂停或终止向您提供服务的权利。</p>
         </div>
       </main>
+      <Footer productLinks={commonLinks.products} companyLinks={commonLinks.company} />
     </div>
   );
 };

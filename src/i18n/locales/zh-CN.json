@@ -70,7 +70,29 @@
       "contact": "联系支持",
       "privacy": "隐私政策",
       "terms": "服务条款",
+      "feedback": "建议反馈",
       "newsletter": "订阅最新动态"
+    }
+  },
+  "feedback": {
+    "title": "建议与反馈",
+    "subtitle": "您的每一个想法都能帮助我们更进一步",
+    "type": "反馈类型",
+    "emailLabel": "您的邮箱 (用于回复)",
+    "contentLabel": "详细描述",
+    "placeholderEmail": "example@mail.com",
+    "placeholderContent": "请详细描述您的问题或建议...",
+    "submit": "发送反馈",
+    "submitting": "正在发送...",
+    "successTitle": "提交成功！",
+    "successDesc": "感谢您的宝贵建议。我们的团队会认真阅读每一份反馈，并在必要时通过邮件与您联系。",
+    "btnContinue": "继续反馈",
+    "errorContent": "请填写详细描述",
+    "types": {
+      "bug": "Bug 提交",
+      "feature": "新功能建议",
+      "ui": "UI/UX 改进",
+      "other": "其他"
     }
   }
 }
