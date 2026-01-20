@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "lowcode": "Smart Writing",
+    "stockMonitor": "Stock Assistant",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "title": "Building the Future of",
+    "subtitle": "Intelligent Creation",
+    "description": "Next-generation tools for data-centric writing and intelligent market monitoring. Powerful, intuitive, and AI-driven.",
+    "cta": "Explore Our Platforms"
+  },
+  "lowcode": {
+    "subtitle": "ENTERPRISE DATA WRITING PLATFORM",
+    "title": "Data-Driven Intelligent Writing System",
+    "description": "An integrated enterprise platform that seamlessly combines data collection, intelligent analysis, and professional writing to transform data into insightful reports.",
+    "domain": "doc.xutils.cn",
+    "features": {
+      "formBuilder": {
+        "name": "Drag-and-Drop Data Collection",
+        "desc": "Quickly build forms to collect structured data from multiple channels with open public collection support."
+      },
+      "aiViews": {
+        "name": "AI-Powered Analysis",
+        "desc": "Automatically generate visualizations and deep analytical insights from collected data."
+      },
+      "dataWriting": {
+        "name": "Data-Integrated Writing",
+        "desc": "Reference data and charts directly in documents for deep integration of data and content."
+      },
+      "permissions": {
+        "name": "Enterprise Permission System",
+        "desc": "Support for organizational structure, departmental collaboration, and granular data access control."
+      }
+    }
+  },
+  "stockMonitor": {
+    "subtitle": "QUANT TITAN",
+    "title": "AI-Powered Stock Monitoring Assistant",
+    "description": "A high-performance trading assistant designed for professional traders seeking institutional-grade market monitoring.",
+    "domain": "stock.xutils.cn",
+    "features": {
+      "aiSentiment": {
+        "name": "AI Market Sentiment",
+        "desc": "Real-time analysis of market trends and news using advanced LLMs."
+      },
+      "smartStrategy": {
+        "name": "Smart \"Make T\" Strategy",
+        "desc": "Automated monitoring and alerts for high-frequency trading opportunities."
+      },
+      "multiMarket": {
+        "name": "Multi-Market Monitoring",
+        "desc": "Support for A-shares, Hong Kong, and US markets in one view."
+      },
+      "cloudSync": {
+        "name": "Cloud Sync & Notifications",
+        "desc": "Sync your watchlist across devices and get sound/desktop alerts."
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© {{year}} XUtils Platform. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact"
+  }
+}

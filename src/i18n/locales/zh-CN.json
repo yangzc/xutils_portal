@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "lowcode": "智能写作",
+    "stockMonitor": "盯盘助手",
+    "getStarted": "立即开始"
+  },
+  "hero": {
+    "title": "构建未来",
+    "subtitle": "智能创作",
+    "description": "新一代数据驱动的写作工具和智能市场监控系统。强大、直观、AI驱动。",
+    "cta": "探索我们的平台"
+  },
+  "lowcode": {
+    "subtitle": "企业级数据写作平台",
+    "title": "数据驱动的智能写作系统",
+    "description": "为企业打造的一体化平台，将数据收集、智能分析与专业写作无缝融合，让数据自动转化为洞察报告。",
+    "domain": "doc.xutils.cn",
+    "features": {
+      "formBuilder": {
+        "name": "拖拽式数据收集",
+        "desc": "快速构建表单，从多渠道收集结构化数据，支持开放式公开收集。"
+      },
+      "aiViews": {
+        "name": "AI智能分析",
+        "desc": "基于收集的数据，自动生成可视化图表和深度分析洞察。"
+      },
+      "dataWriting": {
+        "name": "数据融合写作",
+        "desc": "在文档中直接引用数据和图表，实现数据与内容的深度融合。"
+      },
+      "permissions": {
+        "name": "企业级权限体系",
+        "desc": "支持组织架构、部门协作和细粒度的数据访问控制。"
+      }
+    }
+  },
+  "stockMonitor": {
+    "subtitle": "量化利器",
+    "title": "AI驱动的盯盘助手",
+    "description": "为专业交易者打造的高性能交易助手，提供机构级市场监控。",
+    "domain": "stock.xutils.cn",
+    "features": {
+      "aiSentiment": {
+        "name": "AI市场情绪分析",
+        "desc": "使用先进的大语言模型实时分析市场趋势和新闻。"
+      },
+      "smartStrategy": {
+        "name": "智能做T策略",
+        "desc": "自动监控和提醒高频交易机会。"
+      },
+      "multiMarket": {
+        "name": "多市场监控",
+        "desc": "在一个视图中支持A股、港股和美股市场。"
+      },
+      "cloudSync": {
+        "name": "云同步与通知",
+        "desc": "跨设备同步您的关注列表，获取声音/桌面提醒。"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© {{year}} XUtils 平台。保留所有权利。",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "contact": "联系我们"
+  }
+}
