@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Mail, CheckCircle, Loader2, Send } from 'lucide-react';

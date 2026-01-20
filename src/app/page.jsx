@@ -1,5 +1,6 @@
+'use client';
+
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { FileText, TrendingUp } from 'lucide-react';
 import Navbar from '../components/Navbar';
@@ -9,7 +10,7 @@ import Footer from '../components/Footer';
 
 import { URLS, getCommonLinks } from '../siteConfig';
 
-const Home = () => {
+export default function Home() {
   const { t } = useTranslation();
   const commonLinks = getCommonLinks(t);
 
@@ -18,11 +19,6 @@ const Home = () => {
 
   return (
     <div className="app">
-      <Helmet>
-        <title>XUtils - {t('hero.subtitle')}</title>
-        <meta name="description" content={t('hero.description')} />
-      </Helmet>
-      
       <Navbar showNav={true} navLinks={navLinks} />
       <main>
         <Hero />
@@ -58,6 +54,4 @@ const Home = () => {
       />
     </div>
   );
-};
-
-export default Home;
+}

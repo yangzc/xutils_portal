@@ -1,5 +1,6 @@
+"use client";
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { Mail, Github, Twitter } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { COMPANY_INFO } from '../siteConfig';
@@ -29,7 +30,7 @@ const Footer = ({
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           {/* Column 1: Brand */}
           <div className="col-span-1 md:col-span-1">
-            <Link to="/" className="text-2xl font-extrabold tracking-tight font-heading mb-6 block">
+            <Link href="/" className="text-2xl font-extrabold tracking-tight font-heading mb-6 block">
               {brandName}
             </Link>
             <p className="text-muted-foreground leading-relaxed italic mb-6 text-sm">
