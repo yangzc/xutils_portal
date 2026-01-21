@@ -1,7 +1,7 @@
 export const URLS = {
-  portal: 'http://localhost:5173',
-  lowCode: 'http://localhost:5174',
-  stockMonitor: 'http://localhost:5175',
+  portal: 'https://xutils.cn',
+  lowCode: 'https://doc.xutils.cn',
+  stockMonitor: 'https://stock.xutils.cn',
 };
 
 export const COMPANY_INFO = {

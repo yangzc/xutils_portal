@@ -85,6 +85,7 @@ const Footer = ({
         
         <div className="pt-8 border-t flex flex-col md:flex-row items-center justify-between gap-4 text-muted-foreground text-sm">
           <p>© {year} {brandName}. {t('footer.rights') || 'All rights reserved.'}</p>
+          <span>京ICP备2026003401号-1</span>
         </div>
       </div>
     </footer>

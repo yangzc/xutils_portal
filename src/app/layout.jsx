@@ -17,6 +17,9 @@ const outfit = Outfit({
 export const metadata = {
   title: 'XUtils - Professional Tools for Developers',
   description: 'Boost your productivity with professional-grade developer tools.',
+  icons: {
+    icon: '/logo.svg',
+  },
 };
 
 import { I18nProvider } from '../i18n/I18nProvider';
