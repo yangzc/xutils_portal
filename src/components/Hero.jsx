@@ -48,8 +48,8 @@ export default function Hero() {
             fontWeight: 800
           }}
         >
-          {t('hero.title')} <br />
-          <span className="gradient-text">{t('hero.subtitle')}</span>
+          {t('portal.hero.title')} <br />
+          <span className="gradient-text">{t('portal.hero.subtitle')}</span>
         </motion.h1>
         
         <motion.p 
@@ -63,7 +63,7 @@ export default function Hero() {
             margin: '0 auto' 
           }}
         >
-          {t('hero.description')}
+          {t('portal.hero.description')}
         </motion.p>
       </div>
     </section>

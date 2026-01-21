@@ -2,30 +2,31 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 export default function ProductCard({ id, icon, link }) {
   const { t } = useTranslation();
 
   return (
-    <motion.a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
+    <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       whileHover={{ y: -8 }}
-      className="glass-card"
-      style={{
-        display: 'block',
-        textDecoration: 'none',
-        color: 'inherit',
-        padding: '3rem 2rem',
-        position: 'relative',
-        overflow: 'hidden',
-        cursor: 'pointer'
-      }}
     >
+      <Link
+        href={link}
+        className="glass-card"
+        style={{
+          display: 'block',
+          textDecoration: 'none',
+          color: 'inherit',
+          padding: '3rem 2rem',
+          position: 'relative',
+          overflow: 'hidden',
+          cursor: 'pointer'
+        }}
+      >
       <div style={{ fontSize: '3rem', marginBottom: '1.5rem' }}>
         {icon}
       </div>
@@ -36,7 +37,7 @@ export default function ProductCard({ id, icon, link }) {
         marginBottom: '1rem',
         color: 'var(--primary)'
       }}>
-        {t(`${id}.subtitle`)}
+        {t(`portal.${id}.subtitle`)}
       </h3>
       
       <h2 style={{ 
@@ -45,7 +46,7 @@ export default function ProductCard({ id, icon, link }) {
         marginBottom: '1rem',
         color: 'var(--foreground)'
       }}>
-        {t(`${id}.title`)}
+        {t(`portal.${id}.title`)}
       </h2>
       
       <p style={{ 
@@ -54,7 +55,7 @@ export default function ProductCard({ id, icon, link }) {
         lineHeight: 1.6,
         marginBottom: '1.5rem'
       }}>
-        {t(`${id}.description`)}
+        {t(`portal.${id}.description`)}
       </p>
 
       <div style={{
@@ -65,7 +66,7 @@ export default function ProductCard({ id, icon, link }) {
         fontWeight: 600,
         fontSize: '0.95rem'
       }}>
-        <span>{t(`${id}.domain`)}</span>
+        <span>{t(`portal.${id}.domain`)}</span>
         <ArrowRight size={18} />
       </div>
 
@@ -80,6 +81,7 @@ export default function ProductCard({ id, icon, link }) {
         filter: 'blur(40px)',
         pointerEvents: 'none'
       }} />
-    </motion.a>
+      </Link>
+    </motion.div>
   );
 }

@@ -1,61 +1,182 @@
 {
   "nav": {
+    "portal": "Portal",
     "lowcode": "Smart Writing",
     "stockMonitor": "Stock Assistant",
     "getStarted": "Get Started"
   },
-  "hero": {
-    "title": "Building the Future of",
-    "subtitle": "Intelligent Creation",
-    "description": "Next-generation tools for data-centric writing and intelligent market monitoring. Powerful, intuitive, and AI-driven.",
-    "cta": "Explore Our Platforms"
-  },
-  "lowcode": {
-    "subtitle": "ENTERPRISE DATA WRITING PLATFORM",
-    "title": "Data-Driven Intelligent Writing System",
-    "description": "An integrated enterprise platform that seamlessly combines data collection, intelligent analysis, and professional writing to transform data into insightful reports.",
-    "domain": "doc.xutils.cn",
-    "features": {
-      "formBuilder": {
-        "name": "Drag-and-Drop Data Collection",
-        "desc": "Quickly build forms to collect structured data from multiple channels with open public collection support."
-      },
-      "aiViews": {
-        "name": "AI-Powered Analysis",
-        "desc": "Automatically generate visualizations and deep analytical insights from collected data."
-      },
-      "dataWriting": {
-        "name": "Data-Integrated Writing",
-        "desc": "Reference data and charts directly in documents for deep integration of data and content."
-      },
-      "permissions": {
-        "name": "Enterprise Permission System",
-        "desc": "Support for organizational structure, departmental collaboration, and granular data access control."
+  "portal": {
+    "hero": {
+      "title": "Building the Future of",
+      "subtitle": "Intelligent Creation",
+      "description": "Next-generation tools for data-centric writing and intelligent market monitoring. Powerful, intuitive, and AI-driven.",
+      "cta": "Explore Our Platforms"
+    },
+    "lowcode": {
+      "subtitle": "ENTERPRISE DATA WRITING PLATFORM",
+      "title": "Data-Driven Intelligent Writing System",
+      "description": "An integrated enterprise platform that seamlessly combines data collection, intelligent analysis, and professional writing to transform data into insightful reports.",
+      "domain": "doc.xutils.cn",
+      "features": {
+        "formBuilder": {
+          "name": "Drag-and-Drop Data Collection",
+          "desc": "Quickly build forms to collect structured data from multiple channels with open public collection support."
+        },
+        "aiViews": {
+          "name": "AI-Powered Analysis",
+          "desc": "Automatically generate visualizations and deep analytical insights from collected data."
+        },
+        "dataWriting": {
+          "name": "Data-Integrated Writing",
+          "desc": "Reference data and charts directly in documents for deep integration of data and content."
+        },
+        "permissions": {
+          "name": "Enterprise Permission System",
+          "desc": "Support for organizational structure, departmental collaboration, and granular data access control."
+        }
+      }
+    },
+    "stockMonitor": {
+      "subtitle": "QUANT TITAN",
+      "title": "AI-Powered Stock Monitoring Assistant",
+      "description": "A high-performance trading assistant designed for professional traders seeking institutional-grade market monitoring.",
+      "domain": "stock.xutils.cn",
+      "features": {
+        "aiSentiment": {
+          "name": "AI Market Sentiment",
+          "desc": "Real-time analysis of market trends and news using advanced LLMs."
+        },
+        "smartStrategy": {
+          "name": "Smart \"Make T\" Strategy",
+          "desc": "Automated monitoring and alerts for high-frequency trading opportunities."
+        },
+        "multiMarket": {
+          "name": "Multi-Market Monitoring",
+          "desc": "Support for A-shares, Hong Kong, and US markets in one view."
+        },
+        "cloudSync": {
+          "name": "Cloud Sync & Notifications",
+          "desc": "Sync your watchlist across devices and get sound/desktop alerts."
+        }
       }
     }
   },
-  "stockMonitor": {
-    "subtitle": "QUANT TITAN",
-    "title": "AI-Powered Stock Monitoring Assistant",
-    "description": "A high-performance trading assistant designed for professional traders seeking institutional-grade market monitoring.",
-    "domain": "stock.xutils.cn",
+  "doc_site": {
+    "nav": {
+      "features": "Features",
+      "solutions": "Solutions",
+      "templates": "Templates",
+      "pricing": "Pricing",
+      "login": "Login",
+      "register": "Sign Up",
+      "portal": "XUtils Home"
+    },
+    "hero": {
+      "tagline": "Next-Gen Smart Writing Platform",
+      "title": "Smart Data Writing Platform",
+      "subtitle": "All-in-one Tool for Data Collection, Analysis, and Writing",
+      "description": "From drag-and-drop forms to AI-powered analysis, and data-driven automated writing. Bridge the gap between data and documents.",
+      "ctaPrimary": "Get Started",
+      "ctaSecondary": "View Demo",
+      "feature1": "10x Efficiency",
+      "feature2": "Data-Driven Writing",
+      "feature3": "AI Powered"
+    },
     "features": {
-      "aiSentiment": {
-        "name": "AI Market Sentiment",
-        "desc": "Real-time analysis of market trends and news using advanced LLMs."
+      "title": "End-to-End Data & Content Workflow",
+      "subtitle": "Intelligent automation from collection to production",
+      "formBuilder": {
+        "name": "Drag-and-Drop Form Builder",
+        "desc": "WYSIWYG form builder. Easily create questionnaires, registration forms, or internal data collection sheets with multi-channel support."
       },
-      "smartStrategy": {
-        "name": "Smart \"Make T\" Strategy",
-        "desc": "Automated monitoring and alerts for high-frequency trading opportunities."
+      "aiViews": {
+        "name": "AI-Powered Analysis",
+        "desc": "Built-in powerful AI analysis engine. Automatically convert collected data into visual charts, pivot tables, and generate deep insights."
+      },
+      "dataWriting": {
+        "name": "Data-Driven Writing",
+        "desc": "Directly reference real-time data and charts in your documents. When data updates, documents sync automatically."
+      },
+      "permissions": {
+        "name": "Enterprise Permission Control",
+        "desc": "Role-Based Access Control (RBAC). Manage access not just for documents, but down to specific form fields and data rows."
+      }
+    },
+    "solutions": {
+      "title": "For Every Scenario",
+      "items": {
+        "report": "Business Reporting",
+        "research": "Market Research",
+        "project": "Project Management"
+      }
+    },
+    "cta": {
+      "title": "Ready to Experience Smart Writing?",
+      "description": "Join thousands of enterprises pursuing efficiency and start a new era of data-driven content creation.",
+      "button": "Sign Up Now"
+    }
+  },
+  "stock_site": {
+    "nav": {
+      "features": "Features",
+      "showcase": "Showcase",
+      "download": "Download",
+      "getStarted": "Free Download",
+      "portal": "XUtils Home"
+    },
+    "hero": {
+      "title": "Capture Every Trading Signal Precisely",
+      "description": "Stock Monitor provides comprehensive real-time market monitoring for A-shares, Hong Kong stocks, and US stocks. With smart T-making strategies and instant notifications, free yourself from busy work and never miss important market movements.",
+      "ctaPrimary": "Get Started",
+      "ctaSecondary": "Learn More"
+    },
+    "features": {
+      "title": "Core Features",
+      "subtitle": "Professional monitoring experience for investors",
+      "realtime": {
+        "name": "Real-time Quotes",
+        "desc": "Auto-refresh every 2 seconds with millisecond-level latency, ensuring you stay ahead."
+      },
+      "smartT": {
+        "name": "Smart T-Making",
+        "desc": "Built-in strategy threshold configuration, automatically calculate buy/sell points to assist strategy execution."
+      },
+      "notifications": {
+        "name": "Comprehensive Alerts",
+        "desc": "Support sound alerts, desktop notifications, and logging to ensure you receive notifications even when running in background."
       },
       "multiMarket": {
-        "name": "Multi-Market Monitoring",
-        "desc": "Support for A-shares, Hong Kong, and US markets in one view."
+        "name": "Multi-Market Support",
+        "desc": "Seamlessly cover A-shares, Hong Kong stocks, and US stocks - manage global assets with one tool."
       },
-      "cloudSync": {
-        "name": "Cloud Sync & Notifications",
-        "desc": "Sync your watchlist across devices and get sound/desktop alerts."
+      "privacy": {
+        "name": "Privacy & Security",
+        "desc": "Local storage, no upload of sensitive trading data, transparent code, stable operation."
+      },
+      "professionalUI": {
+        "name": "Professional UI",
+        "desc": "Native experience built with PySide6, supports system tray operation without taking up desktop space."
       }
+    },
+    "showcase": {
+      "title": "Feature Showcase",
+      "multiStock": "Multi-stock monitoring: List-style management with clear price changes and quotes.",
+      "strategyConfig": "Strategy configuration: Customize monitoring rules for each stock (breakout, rebound, price range).",
+      "positionManagement": "Position management: Record holding costs and automatically calculate floating P&L.",
+      "systemTray": "System tray: Elegantly hidden, quietly monitors in background with bubble notifications."
+    },
+    "download": {
+      "title": "Start Your Smart Trading Journey Now",
+      "subtitle": "Free download, local operation, safe and stable",
+      "windowsTitle": "Windows",
+      "windowsDesc": "Universal Installer",
+      "macosTitle": "macOS",
+      "macosIntelDesc": "Intel Chip",
+      "macosSiliconDesc": "Apple Silicon",
+      "linuxTitle": "Linux",
+      "linuxDesc": "Tarball",
+      "downloadBtn": "Download",
+      "version": "Current Version"
     }
   },
   "footer": {

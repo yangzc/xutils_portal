@@ -1,61 +1,182 @@
 {
   "nav": {
+    "portal": "首页门户",
     "lowcode": "智能写作",
     "stockMonitor": "盯盘助手",
     "getStarted": "立即开始"
   },
-  "hero": {
-    "title": "构建未来",
-    "subtitle": "智能创作",
-    "description": "新一代数据驱动的写作工具和智能市场监控系统。强大、直观、AI驱动。",
-    "cta": "探索我们的平台"
-  },
-  "lowcode": {
-    "subtitle": "企业级数据写作平台",
-    "title": "数据驱动的智能写作系统",
-    "description": "为企业打造的一体化平台，将数据收集、智能分析与专业写作无缝融合，让数据自动转化为洞察报告。",
-    "domain": "doc.xutils.cn",
-    "features": {
-      "formBuilder": {
-        "name": "拖拽式数据收集",
-        "desc": "快速构建表单，从多渠道收集结构化数据，支持开放式公开收集。"
-      },
-      "aiViews": {
-        "name": "AI智能分析",
-        "desc": "基于收集的数据，自动生成可视化图表和深度分析洞察。"
-      },
-      "dataWriting": {
-        "name": "数据融合写作",
-        "desc": "在文档中直接引用数据和图表，实现数据与内容的深度融合。"
-      },
-      "permissions": {
-        "name": "企业级权限体系",
-        "desc": "支持组织架构、部门协作和细粒度的数据访问控制。"
+  "portal": {
+    "hero": {
+      "title": "构建未来",
+      "subtitle": "智能创作",
+      "description": "新一代数据驱动的写作工具和智能市场监控系统。强大、直观、AI驱动。",
+      "cta": "探索我们的平台"
+    },
+    "lowcode": {
+      "subtitle": "企业级数据写作平台",
+      "title": "数据驱动的智能写作系统",
+      "description": "为企业打造的一体化平台，将数据收集、智能分析与专业写作无缝融合，让数据自动转化为洞察报告。",
+      "domain": "doc.xutils.cn",
+      "features": {
+        "formBuilder": {
+          "name": "拖拽式数据收集",
+          "desc": "快速构建表单，从多渠道收集结构化数据，支持开放式公开收集。"
+        },
+        "aiViews": {
+          "name": "AI智能分析",
+          "desc": "基于收集的数据，自动生成可视化图表和深度分析洞察。"
+        },
+        "dataWriting": {
+          "name": "数据融合写作",
+          "desc": "在文档中直接引用数据和图表，实现数据与内容的深度融合。"
+        },
+        "permissions": {
+          "name": "企业级权限体系",
+          "desc": "支持组织架构、部门协作和细粒度的数据访问控制。"
+        }
+      }
+    },
+    "stockMonitor": {
+      "subtitle": "量化利器",
+      "title": "AI驱动的盯盘助手",
+      "description": "为专业交易者打造的高性能交易助手，提供机构级市场监控。",
+      "domain": "stock.xutils.cn",
+      "features": {
+        "aiSentiment": {
+          "name": "AI市场情绪分析",
+          "desc": "使用先进的大语言模型实时分析市场趋势和新闻。"
+        },
+        "smartStrategy": {
+          "name": "智能做T策略",
+          "desc": "自动监控和提醒高频交易机会。"
+        },
+        "multiMarket": {
+          "name": "多市场监控",
+          "desc": "在一个视图中支持A股、港股和美股市场。"
+        },
+        "cloudSync": {
+          "name": "云同步与通知",
+          "desc": "跨设备同步您的关注列表，获取声音/桌面提醒。"
+        }
       }
     }
   },
-  "stockMonitor": {
-    "subtitle": "量化利器",
-    "title": "AI驱动的盯盘助手",
-    "description": "为专业交易者打造的高性能交易助手，提供机构级市场监控。",
-    "domain": "stock.xutils.cn",
+  "doc_site": {
+    "nav": {
+      "features": "核心功能",
+      "solutions": "解决方案",
+      "templates": "模板中心",
+      "pricing": "价格方案",
+      "login": "登录",
+      "register": "免费注册",
+      "portal": "XUtils 首页"
+    },
+    "hero": {
+      "tagline": "全新一代智能写作平台",
+      "title": "智能数据写作平台",
+      "subtitle": "集数据收集、分析于一体的新一代文档工具",
+      "description": "从拖拽式表单收集数据，到AI智能分析视图，再到数据驱动的自动化写作。打通数据与文档的边界，让每一次写作都有据可依。",
+      "ctaPrimary": "开始使用",
+      "ctaSecondary": "查看演示",
+      "feature1": "10x 提升效率",
+      "feature2": "数据驱动写作",
+      "feature3": "AI 深度赋能"
+    },
     "features": {
-      "aiSentiment": {
-        "name": "AI市场情绪分析",
-        "desc": "使用先进的大语言模型实时分析市场趋势和新闻。"
+      "title": "一站式数据内容闭环",
+      "subtitle": "从收集到产出，全流程智能化驱动",
+      "formBuilder": {
+        "name": "拖拽式表单收集",
+        "desc": "所见即所得的表单构建器。轻松创建问卷、报名表或内部数据采集单，支持多渠道分发与公开收集。"
       },
-      "smartStrategy": {
-        "name": "智能做T策略",
-        "desc": "自动监控和提醒高频交易机会。"
+      "aiViews": {
+        "name": "AI 智能分析视图",
+        "desc": "内置强大的 AI 分析引擎。自动将收集的数据转化为可视化图表、透视表，并生成深度洞察报告。"
+      },
+      "dataWriting": {
+        "name": "数据驱动文档写作",
+        "desc": "在文档中直接引用实时数据和分析图表。数据更新，文档自动同步，告别繁琐的复制粘贴。"
+      },
+      "permissions": {
+        "name": "企业级权限控制",
+        "desc": "基于角色的细粒度权限管理（RBAC）。不仅控制文档访问，更能精确到表单字段和数据行级的可见性。"
+      }
+    },
+    "solutions": {
+      "title": "满足多场景需求",
+      "items": {
+        "report": "业务汇报",
+        "research": "市场调研",
+        "project": "项目管理"
+      }
+    },
+    "cta": {
+      "title": "准备好体验智能写作了吗？",
+      "description": "加入数千家追求高效的企业，开启数据驱动内容创作的新时代。",
+      "button": "立即免费注册"
+    }
+  },
+  "stock_site": {
+    "nav": {
+      "features": "核心功能",
+      "showcase": "软件演示",
+      "download": "立即下载",
+      "getStarted": "免费下载",
+      "portal": "XUtils 首页"
+    },
+    "hero": {
+      "title": "精准捕捉 每一个交易信号",
+      "description": "盯盘助手为您提供 A股、港股、美股全方位的实时行情监控。通过智能做T策略与即时通知，让您从繁忙的工作中解放，不错过任何重要行情。",
+      "ctaPrimary": "开始使用",
+      "ctaSecondary": "了解更多"
+    },
+    "features": {
+      "title": "核心特性",
+      "subtitle": "为投资者打造的专业监控体验",
+      "realtime": {
+        "name": "实时行情",
+        "desc": "每 2 秒自动刷新行情，延迟低至毫秒级，确保数据快人一步。"
+      },
+      "smartT": {
+        "name": "智能做T",
+        "desc": "内置多种策略阈值配置，自动计算买入卖出点位，辅助策略执行。"
+      },
+      "notifications": {
+        "name": "全能提醒",
+        "desc": "支持声音提醒、桌面弹窗及日志记录，确保即便后台运行也能收到通知。"
       },
       "multiMarket": {
-        "name": "多市场监控",
-        "desc": "在一个视图中支持A股、港股和美股市场。"
+        "name": "多市场支持",
+        "desc": "无缝覆盖 A股、港股与美股，一个工具管理全球资产。"
       },
-      "cloudSync": {
-        "name": "云同步与通知",
-        "desc": "跨设备同步您的关注列表，获取声音/桌面提醒。"
+      "privacy": {
+        "name": "隐私安全",
+        "desc": "本地存储，不上传用户交易敏感数据，代码透明，运行稳健。"
+      },
+      "professionalUI": {
+        "name": "专业 UI",
+        "desc": "基于 PySide6 打造的原生体验，支持系统托盘运行，不占桌面空间。"
       }
+    },
+    "showcase": {
+      "title": "功能演示",
+      "multiStock": "多股监控：列表式管理，涨跌幅与价格一目了然。",
+      "strategyConfig": "策略配置：为每只股票量身定制监控规则（如破位、反弹、价格区间）。",
+      "positionManagement": "持仓管理：记录持仓成本，自动计算浮动盈亏。",
+      "systemTray": "系统托盘：优雅隐藏，后台安静监控，气泡弹窗提醒交易。"
+    },
+    "download": {
+      "title": "立即开启您的智能交易之旅",
+      "subtitle": "免费下载，本地运行，安全稳健",
+      "windowsTitle": "Windows",
+      "windowsDesc": "通用安装包",
+      "macosTitle": "macOS",
+      "macosIntelDesc": "Intel 芯片",
+      "macosSiliconDesc": "Apple Silicon",
+      "linuxTitle": "Linux",
+      "linuxDesc": "Tarball 压缩包",
+      "downloadBtn": "立即下载",
+      "version": "当前版本"
     }
   },
   "footer": {
