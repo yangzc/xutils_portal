@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # 配置信息
-REMOTE_USER="yangzc"
-REMOTE_HOST="180.76.57.120"
-REMOTE_PATH="/home/yangzc/sites/xutils.cn"
+REMOTE_USER="ubuntu"
+REMOTE_HOST="151.145.42.108"
+REMOTE_PATH="/home/ubuntu/sites/xutils.cn"
 
 echo "🚀 开始部署 xutils_portal (SSG 模式)..."
 

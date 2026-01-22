@@ -14,7 +14,7 @@ export const ROUTES = {
   feedback: '/feedback',
 };
 
-export const getPortalLink = (path) => `${URLS.portal}${path}`;
+export const getPortalLink = (path) => `${path}`;
 
 export const getCommonLinks = (t) => ({
   products: [
