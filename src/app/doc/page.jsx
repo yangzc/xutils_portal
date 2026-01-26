@@ -6,7 +6,7 @@ import Hero from '../../components/doc/Hero';
 import Features from '../../components/doc/Features';
 import Solutions from '../../components/doc/Solutions';
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import Footer from '../../components/Footer';
@@ -56,11 +56,18 @@ export default function DocPage() {
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link 
-                  href="https://app.xutils.cn/register"
-                  className="px-10 py-5 rounded-2xl bg-white text-primary font-bold text-xl shadow-2xl hover:bg-muted transition-all flex items-center gap-2"
+                  href="https://doc.xutils.cn"
+                  className="px-10 py-5 rounded-2xl bg-white text-primary font-bold text-xl shadow-2xl hover:-translate-y-1 transition-all flex items-center gap-2"
                 >
-                  {t('doc_site.cta.button')}
+                  {t('doc_site.hero.ctaUse')}
                   <ArrowRight size={24} />
+                </Link>
+                <Link 
+                  href="https://doc.xutils.cn"
+                  className="px-10 py-5 rounded-2xl bg-primary-dark text-white border border-white/20 font-bold text-xl shadow-2xl hover:-translate-y-1 transition-all flex items-center gap-2"
+                >
+                  {t('doc_site.hero.ctaRegister')}
+                  <Sparkles size={24} />
                 </Link>
               </div>
             </motion.div>

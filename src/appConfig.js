@@ -1,19 +1,34 @@
 export const APP_CONFIG = {
-    // 当前版本号
-    version: 'v1.0.0',
-
-    // 下载链接
+    version: '-',
     downloadLinks: {
-        // Windows 安装包
-        windows: 'https://dl.xutils.cn/download/StockMonitor-Windows.zip',
-
-        // macOS Intel 芯片版本
-        macosIntel: 'https://dl.xutils.cn/download/StockMonitor_x86_64.zip',
-
-        // macOS Apple Silicon (M1/M2/M3) 版本
-        macosAppleSilicon: 'https://dl.xutils.cn/download/StockMonitor_arm64.zip',
-        
-        // Linux 版本
-        linux: 'https://dl.xutils.cn/download/StockMonitor-Linux.tar.gz',
+        windows: '#',
+        macosIntel: '#',
+        macosAppleSilicon: '#',
+        linux: '#',
     }
 };
+
+export async function fetchAppConfig() {
+    try {
+        const response = await fetch('https://dl.xutils.cn/download/version.json', {
+            cache: 'no-store'
+        });
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        
+        return {
+            version: data.version.startsWith('v') ? data.version : `v${data.version}`,
+            downloadLinks: {
+                windows: data.downloads.windows.url,
+                macosIntel: data.downloads.macos_intel.url,
+                macosAppleSilicon: data.downloads.macos_arm.url,
+                linux: data.downloads.linux.url
+            }
+        };
+    } catch (error) {
+        console.error('Failed to fetch app config:', error);
+        return APP_CONFIG; // Return default config on failure
+    }
+}

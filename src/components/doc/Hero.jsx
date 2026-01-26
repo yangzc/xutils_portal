@@ -64,13 +64,20 @@ const Hero = () => {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <Link 
-            href="https://app.xutils.cn/register"
+            href="https://doc.xutils.cn"
             className="group px-8 py-4 rounded-2xl bg-grad-primary text-white font-bold text-lg shadow-xl hover:-translate-y-1 transition-all flex items-center gap-2"
           >
-            {t('doc_site.hero.ctaPrimary')}
-            <ArrowRight size={20} className="group-hover:translate-x-1 transition-all" />
+            {t('doc_site.hero.ctaRegister')}
+            <Sparkles size={20} className="group-hover:rotate-12 transition-all" />
           </Link>
 
+          <Link 
+            href="https://doc.xutils.cn"
+            className="group px-8 py-4 rounded-2xl bg-white text-primary border border-primary/20 font-bold text-lg shadow-lg hover:-translate-y-1 transition-all flex items-center gap-2"
+          >
+            {t('doc_site.hero.ctaUse')}
+            <ArrowRight size={20} className="group-hover:translate-x-1 transition-all" />
+          </Link>
         </motion.div>
 
         {/* Features Row */}

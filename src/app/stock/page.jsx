@@ -1,16 +1,23 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Monitor, Cpu, Terminal, Github, Download } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import { URLS, getCommonLinks } from '../../siteConfig';
-import { APP_CONFIG } from '../../appConfig';
+import { APP_CONFIG, fetchAppConfig } from '../../appConfig';
 
 export default function StockPage() {
   const { t } = useTranslation();
   const commonLinks = getCommonLinks(t);
+  const [config, setConfig] = useState(APP_CONFIG);
+
+  useEffect(() => {
+    fetchAppConfig().then(newConfig => {
+      setConfig(newConfig);
+    });
+  }, []);
 
   const navLinks = [
     { name: t('stock_site.nav.portal'), href: '/' },
@@ -142,8 +149,8 @@ export default function StockPage() {
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', background: 'rgba(255,255,255,0.03)', padding: '0.75rem 1.5rem', borderRadius: '99px', border: '1px solid rgba(255,255,255,0.08)' }}>
                  <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#10b981', boxShadow: '0 0 10px rgba(16, 185, 129, 0.5)' }} />
                  <p style={{ color: 'var(--text-dim)', fontSize: '0.9rem', margin: 0, letterSpacing: '0.02em' }}>
-                   {t('stock_site.download.version')}: <span style={{ color: 'var(--foreground)', fontWeight: 600, marginLeft: '0.5rem' }}>{APP_CONFIG.version}</span>
-                 </p>
+                    {t('stock_site.download.version')}: <span style={{ color: 'var(--foreground)', fontWeight: 600, marginLeft: '0.5rem' }}>{config.version}</span>
+                  </p>
               </div>
 
               <div style={{ 
@@ -155,7 +162,7 @@ export default function StockPage() {
                   padding: '0 1rem'
               }}>
                 {/* Windows */}
-                <a href={APP_CONFIG.downloadLinks.windows} className="glass-card download-card group" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '2.5rem 1.5rem', textDecoration: 'none', transition: 'all 0.3s ease', cursor: 'pointer', textAlign: 'center' }}>
+                <a href={config.downloadLinks.windows} className="glass-card download-card group" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '2.5rem 1.5rem', textDecoration: 'none', transition: 'all 0.3s ease', cursor: 'pointer', textAlign: 'center' }}>
                   <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem', color: 'var(--foreground)', fontWeight: 700 }}>{t('stock_site.download.windowsTitle')}</h3>
                   <p style={{ fontSize: '0.9rem', color: 'var(--text-dim)', margin: 0 }}>{t('stock_site.download.windowsDesc')}</p>
                   <div className="btn-primary" style={{ marginTop: '2rem', width: '100%', padding: '0.6rem', fontSize: '0.9rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
@@ -164,7 +171,7 @@ export default function StockPage() {
                 </a>
                 
                 {/* macOS Intel */}
-                <a href={APP_CONFIG.downloadLinks.macosIntel} className="glass-card download-card group" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '2.5rem 1.5rem', textDecoration: 'none', transition: 'all 0.3s ease', cursor: 'pointer', textAlign: 'center' }}>
+                <a href={config.downloadLinks.macosIntel} className="glass-card download-card group" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '2.5rem 1.5rem', textDecoration: 'none', transition: 'all 0.3s ease', cursor: 'pointer', textAlign: 'center' }}>
                   <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem', color: 'var(--foreground)', fontWeight: 700 }}>{t('stock_site.download.macosTitle')}</h3>
                   <p style={{ fontSize: '0.9rem', color: 'var(--text-dim)', margin: 0 }}>{t('stock_site.download.macosIntelDesc')}</p>
                   <div className="btn-secondary" style={{ marginTop: '2rem', width: '100%', padding: '0.6rem', fontSize: '0.9rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
@@ -173,7 +180,7 @@ export default function StockPage() {
                 </a>
 
                 {/* macOS Silicon */}
-                <a href={APP_CONFIG.downloadLinks.macosAppleSilicon} className="glass-card download-card group" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '2.5rem 1.5rem', textDecoration: 'none', transition: 'all 0.3s ease', cursor: 'pointer', textAlign: 'center' }}>
+                <a href={config.downloadLinks.macosAppleSilicon} className="glass-card download-card group" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '2.5rem 1.5rem', textDecoration: 'none', transition: 'all 0.3s ease', cursor: 'pointer', textAlign: 'center' }}>
                   <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem', color: 'var(--foreground)', fontWeight: 700 }}>{t('stock_site.download.macosTitle')}</h3>
                   <p style={{ fontSize: '0.9rem', color: 'var(--text-dim)', margin: 0 }}>{t('stock_site.download.macosSiliconDesc')}</p>
                   <div className="btn-secondary" style={{ marginTop: '2rem', width: '100%', padding: '0.6rem', fontSize: '0.9rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
@@ -182,10 +189,10 @@ export default function StockPage() {
                 </a>
 
                 {/* Linux */}
-                <a href={APP_CONFIG.downloadLinks.linux} className="glass-card download-card group" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '2.5rem 1.5rem', textDecoration: 'none', transition: 'all 0.3s ease', cursor: 'pointer', textAlign: 'center' }}>
+                <a href={config.downloadLinks.linux} className="glass-card download-card group" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '2.5rem 1.5rem', textDecoration: 'none', transition: 'all 0.3s ease', cursor: 'pointer', textAlign: 'center' }}>
                   <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem', color: 'var(--foreground)', fontWeight: 700 }}>{t('stock_site.download.linuxTitle')}</h3>
                   <p style={{ fontSize: '0.9rem', color: 'var(--text-dim)', margin: 0 }}>{t('stock_site.download.linuxDesc')}</p>
-                  <div className="btn-secondary" style={{ marginTop: '2rem', width: '100', padding: '0.6rem', fontSize: '0.9rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+                  <div className="btn-secondary" style={{ marginTop: '2rem', width: '100%', padding: '0.6rem', fontSize: '0.9rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
                        <Download size={16} /> {t('stock_site.download.downloadBtn')}
                   </div>
                 </a>
